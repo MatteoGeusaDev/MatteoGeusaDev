@@ -78,10 +78,6 @@
     max-width: 70%;
   }
 
-  @keyframes move {
-    0% { transform: translateX(-300px); }
-    100% { transform: translateX(0); }
-  }
 
 
 
@@ -93,11 +89,7 @@
     display: block;
     
   }
-  @keyframes closemove {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-300px); }
-    
-  }
+
 
   .dropdown-content img{
     
@@ -144,30 +136,7 @@
   .dropdown-content nav{
     margin-top: -600px;
   }
-
-
-  .container{
-
-      height: 357px;
-      margin: 30px;
-      width: 580px;
-      border-radius: 80px;
-      background-color: #183fbece;
-
-  }
-
-
-
-
-  .container .title-card {
-    color: whitesmoke;
-    text-align: center;
-    margin-left: 280px;
-    margin-top: -300px;
-    
-  }
   
-
 
 
 .timeline {
@@ -223,7 +192,6 @@
 
 
 .infocontent{
-  
   margin-top: 150px;
   margin-right: 150px;
   margin-left: 150px;
@@ -251,39 +219,6 @@
   margin-top: -30px;
 }
 
-  .container .desc-card {
-    color: whitesmoke;
-    text-align: center;
-    margin-left: 280px;
-    margin-top: 150px;
-  }
-
-
-  .immaginecard{
-    max-width: 357px;
-    padding:20px;
-    border-radius: 80px;
-
-  }
-  .total{
-    margin-top: 400px;
-    justify-content: center;
-    justify-self: center;
-    display: flex;
-
-  }
-
-  .total button{
-    font-weight: 800;
-    background-color: aliceblue;
-    color: black;
-    border-radius: 20px;
-    text-align: center;
-    margin-left: 410px;
-    margin-top: 15px;
-
-  }
-
   .arrow {
     
     margin-top: 20px;
@@ -301,24 +236,6 @@
   }
   
 
-  
-  @keyframes arrowAnimation {
-    0%, 100% {
-      top: 0;
-    }
-    50% {
-      top: 40px;
-    }
-  }
-  
-  @keyframes scrollAnimation {
-    0%, 100% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-  }
   
 
 .maincontent{
@@ -340,11 +257,6 @@
   transition: 0.4s;
 }
 
-
-
-
-
-
 .maintitle {
   color: #ffffff;
   width: 340px;
@@ -353,7 +265,7 @@
   height: 360px;
   border-radius: 40px;
   background-color: rgba(211, 211, 211, 0.603);
-  margin-top: -280px; /* Adjust the margin-top value as needed */
+  margin-top: -280px;
 }
 
 .title {
@@ -362,8 +274,6 @@
 }
 
 .subtitle {
-  
-   /* Add a margin-top value to create space between the title and subtitle */
   font-weight: 100;
 }
 
@@ -396,6 +306,52 @@
   padding: 5px;
 }
 
+
+
+
+
+/*Animazioni*/
+
+@keyframes move {
+  0% { transform: translateX(-300px); }
+  100% { transform: translateX(0); }
+}
+
+
+  
+@keyframes arrowAnimation {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 40px;
+  }
+}
+
+@keyframes scrollAnimation {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes closemove {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-300px); }
+  
+}
+
+
+
+
+
+
+
+
+
+/* Resize Schermo*/
 @media (max-width:1379px){
   .infocontent{
     display: none;
@@ -415,6 +371,27 @@
 
   @media (max-width:819px) {
       /*1619*/
+
+
+
+    
+      .container .desc-card {
+        color: whitesmoke;
+        text-align: center;
+        margin-left: 230px;
+        margin-top: 20px;
+        font-size: 14px;
+      }
+    
+    
+      .immaginecard{
+        max-width: 257px;
+        padding:20px;
+        border-radius: 80px;
+    
+      }
+
+
 
     .arrow{
       display: none;
