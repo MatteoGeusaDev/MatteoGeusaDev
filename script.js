@@ -25,7 +25,10 @@ function menu() {
     var scrollPosition = window.scrollY;
   
     if (scrollPosition > 0) {
-      scrollArrow.style.display = "none"; // Rimuovi l'animazione
+      
+      setTimeout(() => {
+        scrollArrow.style.display = "none";
+      }, 200); // Rimuovi l'animazione
     } else {
       scrollArrow.style.animation = "scrollAnimation 1.5s infinite"; // Ripristina l'animazione
     }

@@ -12,13 +12,18 @@
     box-sizing: border-box;
   }
 
-  body{
-    background-image:url("sfondo.png");
-    background-repeat: no-repeat;
-    background-size:contain;
-    background-position: center top;
-    
-    }
+.sfondo{
+  top: 0;
+  left: 0;
+  /* Imposta l'immagine di sfondo */
+  background-image: url('sfondo.png');
+  /* Impedisci il ridimensionamento */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* Imposta le dimensioni desiderate per l'immagine di sfondo */
+  width: 100%;
+  height: 948px;
+}
   
 
   
@@ -281,7 +286,7 @@
 
   .arrow {
     
-    margin-top: 40px;
+    margin-top: 20px;
     position: relative;
     animation: arrowAnimation 1.5s infinite;
   }
@@ -390,6 +395,23 @@
   text-align: center;
   padding: 5px;
 }
+
+@media (max-width:1379px){
+  .infocontent{
+    display: none;
+  }
+
+  .total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+}
+
+
+
+
 
   @media (max-width:819px) {
       /*1619*/
