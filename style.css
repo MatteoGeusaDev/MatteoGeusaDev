@@ -48,6 +48,7 @@
   }
 
   .Header {
+    text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
@@ -55,9 +56,9 @@
     right: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     height: 75px;
-    background-color: #c0c0c086;
+    background-color: #dfdfdfad;
     padding: 0 20px;
   }
 
@@ -77,65 +78,22 @@
     max-width: 70%;
   }
 
-
-
-
-  /* Stili CSS per il menu a tendina */
-  .dropdown {
-  
-    
-    position: relative;
-    display: block;
-    
-  }
-
-
-  .dropdown-content img{
-    
-    max-width: 8%;
-    margin: 10px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-weight: bold;
-    cursor: pointer;
-
-  }
-
-
-  .dropdown-content {
-    animation: move 1s;
-    width: 300px;
-    background-color: #d1d1d1ee;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    position: fixed;
-    display: none; /* Utilizza flexbox per allineare le voci */
-    justify-content: center; /* Centra le voci orizzontalmente */
-    align-items: center; /* Centra le voci verticalmente */
-    top:0;
-    bottom: 0;
-    left: 0;
-  }
-
-
-  .dropdown-content a{
-    margin-top: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
+  .Header .Nav{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 2px;
-    border-radius: 9999px;
-    color:rgb(0, 0, 0);
+    color: #e9e9e9;
+    text-align: center;
+    max-width:100%;
   }
 
-
-  .dropdown-content nav{
-    margin-top: -600px;
+  .Header .Nav a{
+    min-width: 160px;
+    background-color: #838383;
+    border-radius: 20px;
+    padding: 9px;
+    margin: 10px;
+ 
   }
-  
+
 
 
 .timeline {
@@ -227,6 +185,7 @@
 }
 
 .infocontent {
+  
   margin-top: 40px;
   margin-right: 150px;
   margin-left: 150px;
@@ -279,7 +238,8 @@
   
 
 .maincontent{
-  
+  position: relative;
+  z-index: 0;
   padding-top: 60px;
   text-align: center;
   justify-content: center;
@@ -348,6 +308,7 @@
 }
 
 .competenzeline {
+
   margin-top: -685px;
   position: relative;
   margin-left: 20px;
@@ -356,12 +317,14 @@
 
 
 .competenzeline-item {
+
   position: relative;
   padding: 5px 5px;
   }
 
 
 .competenzeline-item .content {
+
   font-size: 15px;
   justify-content: space-between;
   display: flex;
@@ -373,6 +336,7 @@
 }
 
 .imagecompetenze{
+
   background-color: rgb(255, 255, 255);
   padding: 5px;
   transition: ease-out 0.1s;
@@ -426,16 +390,28 @@
 
 
 
+@media (max-width:1570px){
+  .infocontent{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
 
+@media (max-width:1230px){
+  .infocontent{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 
-
+}
 
 
 
 /* Resize Schermo*/
-@media (max-width:1379px){
+@media (max-width:1470px){
   .infocontent{
-    display: none;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .total{
@@ -450,74 +426,22 @@
 
 
 
-  @media (max-width:819px) {
+  @media (max-width:1024px) {
       /*1619*/
-
-
-
-    
-      .container .desc-card {
-        color: whitesmoke;
-        text-align: center;
-        margin-left: 230px;
-        margin-top: 20px;
-        font-size: 14px;
-      }
-    
-    
-      .immaginecard{
-        max-width: 257px;
-        padding:20px;
-        border-radius: 80px;
-    
-      }
-
-
-
-    .arrow{
+  
+    .infocontent{
       display: none;
     }
-    .total {
-      justify-content: center;
-      align-items: center;
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column; /* Align items vertically */
-      
+
+    .sfondo{
+      max-height: 667px;
     }
-
-    body{
-      background-repeat: no-repeat;
-      background-size:cover;
-      background-position: center top;
-      background-attachment: fixed;
-
-      }
-
-      .infocontent{
- 
-  
-        width: 340px;
-        text-align: center;
-        margin: 0 auto;
-        height: 460px;
-        border-radius: 40px;
-        background-color: #0000009a;
-      
-      }
-      
-      .textininfo{
-        font-weight: 2;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-        background-color: #ffffffa6;
-        border-radius: 40px;
-        width: 340px;
-        height: 490px;
-        text-align: center;
-        justify-self: center;
-        justify-content: center;
-        margin-top: -30px;
-      }
+     
+    .maincontent{
+      scale: 0.6;
+      margin-top: -140px;
+    }
+     
       
     
     
